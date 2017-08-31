@@ -5,7 +5,7 @@ $(document).ready(function () {
         // debugger
         $.ajax({
             url: '/api/news/list',
-            type: 'post',
+            type: 'get',
             contentType: "application/json",
             data: JSON.stringify({
                 data: 'hello world'

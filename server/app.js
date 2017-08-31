@@ -38,7 +38,7 @@ router.post('/api/news/update', (ctx, next) => {
     }
     next();
 })
-router.post('/api/news/list', (ctx, next) => {
+router.get('/api/news/list', (ctx, next) => {
     let { data } = ctx.request.body;
     ctx.body = {
         retCode: '000000',
