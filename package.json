@@ -1,0 +1,27 @@
+{
+  "name": "new-cms",
+  "version": "1.0.0",
+  "description": "\"# News-CMS\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shshouye/News-CMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shshouye/News-CMS/issues"
+  },
+  "homepage": "https://github.com/shshouye/News-CMS#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.1"
+  }
+}
