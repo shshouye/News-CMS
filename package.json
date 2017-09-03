@@ -17,12 +17,14 @@
   },
   "homepage": "https://github.com/shshouye/News-CMS#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "jquery": "^3.2.1",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-router": "^7.2.1",
+    "koa-send": "^3.1.0",
     "koa-static": "^3.0.0",
-    "koa-views": "^6.0.1",
+    "koa-views": "^6.0.0",
     "mongoose": "^4.11.9"
   },
   "devDependencies": {

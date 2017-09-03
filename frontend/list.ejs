@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h2 class="sub-header">News</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>title</th>
+                                <th>content</th>
+                                <th>created</th>
+                                <th>updated</th>
+                                <th>edit</th>
+                            </tr>
+                        </thead>
+                        <tbody id="newsList">
+                            <!--<% for(var i = 0; i < data.length; i++) { %>
+                                <tr>
+                                    <td><%= data[i].title %></td>
+                                    <td><%= data[i].content %></td>
+                                    <td><%= data[i].created %></td>
+                                    <td><%= data[i].updated %></td>
+                                    <td>
+                                        <a class="btn btn-default" href="/edit.html?id=<%= data[i].id %>" role="button">修改</a>
+                                        <a class="btn btn-default" href="#" role="button">删除</a>
+                                    </td>
+                                </tr>
+                            <% } %>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+</body>
+
+</html>
