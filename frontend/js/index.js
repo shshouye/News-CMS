@@ -1,34 +1,33 @@
 
 
 $(document).ready(function () {
-    $("#submit").click(function () {
-        // debugger
+    var userInfo = JSON.parse(getCookie('userInfo'));
+    if(userInfo) {
+        window.location.href = '/list.html';
+    }
+
+    $('#login').on('submit', function () {
+        var data = {
+            name: $('#name').val(),
+            password: $('#password').val()
+        }
         $.ajax({
-            url: '/api/news/list',
-            type: 'get',
+            url: '/api/user/login',
+            type: 'post',
             contentType: "application/json",
-            data: JSON.stringify({
-                data: 'hello world'
-            }),
+            data: JSON.stringify(data),
             success: function (res) {
-                if(res.retCode == '000000') {
-                    alert(res.status);
+                if (res.retCode == '000000') {
+                    // debugger
+                    alert(res.msg);
+                    setCookie('userInfo', JSON.stringify(res.data));
+                    window.location.href = '/list.html';
                 } else {
-                    alert('有问题哦');
+                    alert(res.msg);
                 }
             }
         })
-        // $.post("/api/news/update",
-        //     {
-        //         data: 'hello world'
-        //     },
-        //     function (result) {
-        //         debugger
-        //         if(res.retCode == '000000') {
-        //             alert(res.status);
-        //         } else {
-        //             alert('有问题哦');
-        //         }
-        //     });
-    });
+        return false;
+    })
+
 });
