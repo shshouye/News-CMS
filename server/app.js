@@ -89,7 +89,7 @@ async function authVerify(ctx, next) {
         await next();
 
     } catch (err) {
-        logger.error('---------------Verify Error:', err);
+        // logger.error('---------------Verify Error:', err);
         if (err && err.message) {
             handleTokenError(ctx, err.message);
         } else {
@@ -226,7 +226,7 @@ app.use(async function (ctx, next) {
 
     if (ctx.method != "HEAD" && (cPath.indexOf('.html') != -1 || cPath == "/")) {
         await ctx.render(html || 'index', {
-            title: 'ejs-demo',
+            title: 'News',
 
         })
     } else {
