@@ -190,7 +190,7 @@ router.post('/api/news/delete', authVerify, async (ctx, next) => {
         }
     }
 })
-router.get('/api/news/getList', authVerify, async (ctx, next) => {
+router.get('/api/news/getList', async (ctx, next) => {
     let data = await News.find();
     if (data) {
         ctx.body = {
