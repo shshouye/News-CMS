@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    var userInfo = JSON.parse(getCookie('userInfo') || '{}');
+    var userInfo = null;
+    var userStr = getCookie('userInfo');
+    if (userStr) {
+        userInfo = JSON.parse(getCookie('userInfo'));
+    }
     if(!userInfo) {
         alert('当前未登录');
         window.location.href = '/';

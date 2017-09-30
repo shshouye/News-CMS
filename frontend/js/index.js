@@ -1,7 +1,11 @@
 
 
 $(document).ready(function () {
-    var userInfo = JSON.parse(getCookie('userInfo') || '{}');
+    var userInfo = null;
+    var userStr = getCookie('userInfo');
+    if (userStr) {
+        userInfo = JSON.parse(getCookie('userInfo'));
+    }
     if(userInfo) {
         window.location.href = '/list.html';
     }
