@@ -89,7 +89,6 @@ async function authVerify(ctx, next) {
         await next();
 
     } catch (err) {
-        // logger.error('---------------Verify Error:', err);
         if (err && err.message) {
             handleTokenError(ctx, err.message);
         } else {
@@ -282,6 +281,5 @@ app.use(async function (ctx, next) {
 app.use(staticServer(viewsPath));
 
 app.listen(port, () => {
-    // logger.info('Server started on port ' + port);
     console.log('Server started on port ' + port);
 });

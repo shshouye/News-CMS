@@ -4,7 +4,8 @@
   "description": "\"# News-CMS\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "babel server --out-dir ./build"
   },
   "repository": {
     "type": "git",

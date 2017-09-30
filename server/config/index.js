@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 
 const config = {
-    mongodb: 'mongodb://39.108.190.122:27017/newsCms',
+    mongodb: 'mongodb://127.0.0.1:27020/newsCms',
     jwt: {
         secret: 'shsh'
     }
