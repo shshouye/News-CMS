@@ -53,6 +53,7 @@ $(document).ready(function () {
                 if (res.retCode == '000000') {
                     $("#title").val(res.data.title);
                     $("#content").val(res.data.content);
+                    $("tips").val(res.data.tips);
                 } else {
                     alert('出毛病了兄弟');
                 }
