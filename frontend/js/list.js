@@ -50,6 +50,10 @@ $(document).ready(function () {
                 }
                 $('#newsList').append(tableList);
             } else {
+                if(res.retCode == '999999') {
+                    alert('请重新登录');
+                    window.location.href = '/';
+                }
                 alert('出毛病了兄弟');
             }
         }
